@@ -20,7 +20,6 @@ const filters = (state = initialState, action) => {
     };
   }
   return state;
-  // чистая функци reducer / state - актуальное значение / action - действие
 };
 
 export default filters;

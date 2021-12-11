@@ -9,7 +9,6 @@ function App() {
     <div className="wrapper">
       <Header />
       <div className="content">
-        {/* <Route exact path="/" render={() => <Home items={items} />} /> */}
         <Route exact path="/" component={Home} />
         <Route exact path="/cart" component={Cart} />
       </div>

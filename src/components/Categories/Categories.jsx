@@ -6,7 +6,6 @@ const Categories = React.memo(function Categories({
   items,
   onClickCategory,
 }) {
-
   return (
     <div className="categories">
       <ul>
@@ -32,10 +31,9 @@ const Categories = React.memo(function Categories({
 });
 
 Categories.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.string).isRequired,
-  onClickCategory: PropTypes.func.isRequired,
+  activeCategory: PropTypes.number,
+  items: PropTypes.arrayOf(PropTypes.string),
+  onClickCategory: PropTypes.func,
 };
-
-Categories.defaultProps = { activeCategory: null, items: [] };
 
 export default Categories;

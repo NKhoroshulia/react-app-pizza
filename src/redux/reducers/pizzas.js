@@ -19,7 +19,6 @@ const pizzas = (state = initialState, action) => {
     default:
       return state;
   }
-  // чистая функци reducer / state - актуальное значение / action - действие
 };
 
 export default pizzas;

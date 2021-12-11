@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "../Button";
+import Button from "../Button/Button";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 
@@ -97,6 +97,7 @@ function PizzaBlock({
 }
 
 PizzaBlock.propTypes = {
+  id: PropTypes.number,
   name: PropTypes.string,
   imageUrl: PropTypes.string,
   price: PropTypes.number,
@@ -107,10 +108,12 @@ PizzaBlock.propTypes = {
 };
 
 PizzaBlock.defaultProps = {
-  name: "---",
+  name: "",
   price: 0,
   types: [],
   sizes: [],
+  imageUrl: '',
+  id: 0,
 };
 
 export default PizzaBlock;
